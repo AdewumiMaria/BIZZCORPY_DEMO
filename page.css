@@ -181,15 +181,10 @@ nav button {
 .square p {
   color: #767877;
 }
-.border-1 {
+.border {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 80%;
-  margin: 20px auto;
-}
-.border-2 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   width: 80%;
   margin: 20px auto;
 }
@@ -242,16 +237,16 @@ nav button {
 }
 footer {
   background-color: #ffff;
-}
-.footer-item {
   width: 80%;
   margin: 0 auto;
+}
+.footer-item {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
 .social {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .footer-item-1 {
   grid-column: 1 / span 5;
@@ -281,11 +276,10 @@ footer h3 {
 footer img {
   width: 200px;
   height: 100px;
-  margin: 20px 120px;
 }
 form {
   display: grid;
-  gap: 20px;
+  gap: 30px;
 }
 
 input {
@@ -295,8 +289,6 @@ input {
   font-size: 12px;
 }
 .sub-item {
-  width: 80%;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -312,7 +304,7 @@ input {
 }
 .sub-item-2 ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 @media (min-width: 1400px) {
   nav ul {
@@ -554,7 +546,6 @@ input {
   .nav-bar {
     top: 30px;
     align-items: center;
-    /* width: 45%; */
   }
   nav button {
     width: 100px;
@@ -614,14 +605,22 @@ input {
     font-size: 20px;
   }
   .square p {
-    font-size: 20px;
+    font-size: 23px;
+  }
+  .square h5 {
+    font-size: 26px;
   }
   .square {
-    width: 200px;
+    width: 310px;
     height: 400px;
   }
+  .border {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
   .rec {
-    width: 240px;
+    width: 290px;
     height: 400px;
   }
   .rec h4 {
@@ -652,7 +651,6 @@ input {
   footer p {
     font-size: 20px;
   }
-
   .form h3 {
     font-size: 25px;
   }
@@ -703,14 +701,13 @@ input {
   .banner {
     margin-top: 60px;
   }
-  /* .border-1 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  } */
-  /* .border-2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  } */
+  .square {
+    width: 250px;
+    height: 420px;
+  }
+  .rec {
+    width: 270px;
+  }
   .footer-item-2 {
     display: flex;
     gap: 20px;
@@ -721,26 +718,134 @@ input {
     width: 100%;
     height: 100%;
   }
-
-  .footer-item {
+  nav ul {
     display: block;
-    margin: 20px 0;
   }
-}
-@media (max-width: 600px) {
+  nav li {
+    padding-top: 10px;
+  }
+  nav button {
+    margin-top: 10px;
+  }
+  nav span {
+    margin-top: 10px;
+  }
+  .banner {
+    margin-left: 70px;
+  }
   .icons {
     display: block;
   }
-  .border-1 {
+  .about p {
+    font-size: 30px;
+  }
+  .border {
     display: block;
   }
-  .border-2 {
-    display: block;
+  .service-section p {
+    font-size: 23px;
+  }
+  .square {
+    width: 370px;
+    height: 400px;
+  }
+  .Potential {
+    padding: 15px 0;
+  }
+  .sub-section p {
+    font-size: 23px;
   }
   .product {
     display: block;
   }
+  .rec {
+    width: 350px;
+    height: 390px;
+  }
+  .footer-item {
+    display: block;
+    margin: 20px 0;
+  }
+  .sub-item {
+    display: block;
+  }
+}
+@media (max-width: 650px) {
+  .banner {
+    margin-left: 60px;
+  }
   .footer-item-2 {
     display: block;
+  }
+}
+@media (max-width: 600px) {
+  .banner {
+    margin-left: 53px;
+  }
+}
+@media (max-width: 500px) {
+  .banner {
+    margin-left: 45px;
+  }
+  .sub-item-2 ul {
+    display: block;
+  }
+  .square {
+    width: 340px;
+    height: 400px;
+  }
+}
+@media (max-width: 450px) {
+  .banner {
+    margin-left: 42px;
+  }
+  .square {
+    width: 300px;
+    height: 400px;
+  }
+  .rec {
+    width: 320px;
+    height: 390px;
+  }
+}
+@media (max-width: 425px) {
+  .banner {
+    margin-left: 40px;
+  }
+  .social {
+    display: block;
+  }
+}
+@media (max-width: 400px) {
+  .square {
+    width: 270px;
+    height: 420px;
+  }
+  .rec {
+    width: 300px;
+    height: 390px;
+  }
+  .nav-bar ul {
+    padding-top: 5px;
+  }
+  .rectangle {
+    margin-top: 20px;
+    font-size: 18px;
+    width: 170px;
+    height: 20px;
+  }
+  .banner {
+    top: 300px;
+    margin-left: 37px;
+  }
+  .banner h1 {
+    font-size: 30px;
+  }
+  .banner p {
+    font-size: 18px;
+  }
+  .banner button {
+    padding: 10px;
+    font-size: 15px;
   }
 }
